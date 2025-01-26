@@ -3,41 +3,179 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - Bio</title>
+    <title>John Doe - Professional Bio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
-        /* Add CSS styling here (or link an external CSS file) */
-        body { font-family: Arial, sans-serif; line-height: 1.6; max-width: 800px; margin: 0 auto; padding: 20px; }
-        .profile-img { width: 150px; height: 150px; border-radius: 50%; }
-        a { color: #007bff; text-decoration: none; }
+        :root {
+            --primary: #2A2A72;
+            --secondary: #009FFD;
+            --accent: #FF0076;
+            --light: #f8f9fa;
+        }
+
+        body {
+            font-family: 'Segoe UI', system-ui, sans-serif;
+            line-height: 1.8;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            color: #333;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 50px;
+            padding: 40px 0;
+            background: linear-gradient(45deg, var(--primary), var(--secondary));
+            color: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        .profile-img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            border: 5px solid white;
+            margin: 20px 0;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .profile-img:hover {
+            transform: scale(1.05);
+        }
+
+        h1 {
+            font-size: 3.5rem;
+            margin: 20px 0;
+            letter-spacing: -1px;
+        }
+
+        h2 {
+            color: var(--primary);
+            border-bottom: 3px solid var(--secondary);
+            padding-bottom: 10px;
+            margin: 40px 0 30px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .card {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            margin-bottom: 30px;
+            box-shadow: 0 5px 25px rgba(0,0,0,0.08);
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 15px;
+            padding-left: 25px;
+            position: relative;
+        }
+
+        li:before {
+            content: "▹";
+            color: var(--accent);
+            position: absolute;
+            left: 0;
+        }
+
+        a {
+            color: var(--secondary);
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: var(--accent);
+        }
+
+        .social-links {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            margin-top: 30px;
+        }
+
+        .social-links a {
+            font-size: 1.8rem;
+            padding: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .social-links a:hover {
+            transform: translateY(-3px);
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+            
+            h1 {
+                font-size: 2.5rem;
+            }
+            
+            .profile-img {
+                width: 150px;
+                height: 150px;
+            }
+        }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Your Name</h1>
-        <img src="your-photo.jpg" alt="Your Name" class="profile-img">
-    </header>
+    <div class="container">
+        <header class="header">
+            <img src="profile.jpg" alt="John Doe" class="profile-img">
+            <h1>John Doe</h1>
+            <p>Digital Creator & Tech Enthusiast</p>
+            <p>📧 <a href="mailto:john.doe@email.com">john.doe@email.com</a></p>
+        </header>
 
-    <section>
-        <h2>About Me</h2>
-        <p>Your short bio or introduction here.</p>
-        <p>📧 Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
-    </section>
+        <main>
+            <div class="card">
+                <h2>About Me</h2>
+                <p>Passionate full-stack developer with 5+ years of experience in creating digital solutions. Specializing in web development and user experience design. Always learning and exploring new technologies!</p>
+            </div>
 
-    <section>
-        <h2>Work Experience</h2>
-        <ul>
-            <li>Job Title 1 - Company Name (Year-Year)</li>
-            <li>Job Title 2 - Company Name (Year-Year)</li>
-        </ul>
-    </section>
+            <div class="card">
+                <h2>Work Experience</h2>
+                <ul>
+                    <li>Senior Developer @TechCorp (2020-Present)</li>
+                    <li>Full-stack Developer @WebWorks (2018-2020)</li>
+                    <li>Junior Developer @StartUpHub (2016-2018)</li>
+                </ul>
+            </div>
 
-    <section>
-        <h2>Social Media</h2>
-        <ul>
-            <li><a href="https://linkedin.com/in/your-profile">LinkedIn</a></li>
-            <li><a href="https://twitter.com/your-profile">Twitter/X</a></li>
-            <li><a href="https://github.com/your-profile">GitHub</a></li>
-        </ul>
-    </section>
+            <div class="card">
+                <h2>Connect With Me</h2>
+                <div class="social-links">
+                    <a href="https://linkedin.com/in/johndoe" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/johndoe" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://twitter.com/johndoe" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="https://medium.com/@johndoe" target="_blank"><i class="fab fa-medium"></i></a>
+                </div>
+            </div>
+        </main>
+    </div>
 </body>
 </html>
