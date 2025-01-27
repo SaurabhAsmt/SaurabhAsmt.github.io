@@ -7,10 +7,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
         :root {
-            --primary: #2A2A72;
-            --secondary: #009FFD;
+            --primary: #ffffff;
+            --secondary: #cccccc;
             --accent: #FF0076;
-            --light: #f8f9fa;
+            --dark: #000000;
         }
 
         body {
@@ -18,8 +18,8 @@
             line-height: 1.8;
             margin: 0;
             padding: 0;
-            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
-            color: #333;
+            background: var(--dark);
+            color: #ffffff;
         }
 
         .container {
@@ -32,30 +32,17 @@
             text-align: center;
             margin-bottom: 50px;
             padding: 40px 0;
-            background: linear-gradient(45deg, var(--primary), var(--secondary));
+            background: var(--dark);
             color: white;
             border-radius: 15px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-        }
-
-        .profile-img {
-            width: 200px;
-            height: 200px;
-            border-radius: 50%;
-            border: 5px solid white;
-            margin: 20px 0;
-            object-fit: cover;
-            transition: transform 0.3s ease;
-        }
-
-        .profile-img:hover {
-            transform: scale(1.05);
+            box-shadow: 0 10px 30px rgba(255,255,255,0.1);
         }
 
         h1 {
             font-size: 3.5rem;
             margin: 20px 0;
             letter-spacing: -1px;
+            color: var(--primary);
         }
 
         h2 {
@@ -68,11 +55,11 @@
         }
 
         .card {
-            background: white;
+            background: #1a1a1a;
             padding: 30px;
             border-radius: 15px;
             margin-bottom: 30px;
-            box-shadow: 0 5px 25px rgba(0,0,0,0.08);
+            box-shadow: 0 5px 25px rgba(255,255,255,0.08);
             transition: transform 0.3s ease;
         }
 
@@ -126,6 +113,13 @@
             transform: translateY(-3px);
         }
 
+        .footer {
+            text-align: center;
+            padding: 20px;
+            color: #666;
+            margin-top: 50px;
+        }
+
         @media (max-width: 768px) {
             .container {
                 padding: 20px;
@@ -134,18 +128,12 @@
             h1 {
                 font-size: 2.5rem;
             }
-            
-            .profile-img {
-                width: 150px;
-                height: 150px;
-            }
         }
     </style>
 </head>
 <body>
     <div class="container">
         <header class="header">
-            <img src="profile.jpg" alt="John Doe" class="profile-img">
             <h1>John Doe</h1>
             <p>Digital Creator & Tech Enthusiast</p>
             <p>📧 <a href="mailto:john.doe@email.com">john.doe@email.com</a></p>
@@ -176,6 +164,10 @@
                 </div>
             </div>
         </main>
+
+        <footer class="footer">
+            © Copyright 2025 John Doe, All Rights Reserved.
+        </footer>
     </div>
 </body>
 </html>
