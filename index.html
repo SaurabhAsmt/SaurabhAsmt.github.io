@@ -170,28 +170,30 @@
                 </div>
             </div>
         </main>
+     <footer class="footer">
+      <p>Visitors: <span id="visitor-counter"></span></p>
+      © Copyright 2025 John Doe, All Rights Reserved.
+    </footer>
 
-        <footer class="footer">
-             <p>Visitors: <span id="visitor-counter"></span></p>
-            © Copyright 2025 John Doe, All Rights Reserved.
-        </footer>
-        <script>
-    // Get the visitor count from local storage
-    let count = localStorage.getItem('visitorCount');
+    <script>
+      // Get the visitor count from local storage
+      let count = localStorage.getItem('visitorCount');
 
-    // If no count exists, initialize it
-    if (count === null) {
-        count = 1;
-    } else {
-        count = parseInt(count) + 1;
-    }
+      // If no count exists, initialize it
+      if (count === null) {
+          count = 1;
+      } else {
+          count = parseInt(count) + 1;
+      }
 
-    // Store the updated count
-    localStorage.setItem('visitorCount', count);
+      // Store the updated count
+      localStorage.setItem('visitorCount', count);
 
-    // Display the count
-    document.getElementById('visitor-counter').innerText = count;
-</script>
+      // Display the count
+      document.getElementById('visitor-counter').innerText = count;
+    </script>
+        
+    
     </div>
 </body>
 </html>
