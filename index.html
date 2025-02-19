@@ -23,6 +23,7 @@
     </header>
 
     <main>
+      <!-- About Me Section -->
       <div class="card">
         <h2>About Me</h2>
         <p>
@@ -31,30 +32,69 @@
         </p>
       </div>
 
+      <!-- Work Experience Section -->
       <div class="card">
         <h2>Work Experience</h2>
         <div class="experience-item">
-          <h3>Web Scraping Developer @Freelancing (2021-Present)</h3>
+          <h3>Senior Developer @TechCorp (2020-Present)</h3>
           <p>
-            Delivered data-driven analysis for the AI-based automotive startup Throttl, aiding in strategic decision-making.
+            At TechCorp, I lead a team of developers in designing and implementing innovative web applications with a focus on scalability and high performance.
+            I collaborate closely with cross-functional teams to enhance user experiences and streamline processes.
           </p>
         </div>
         <div class="experience-item">
-          <h3>Web Developer @Freelancing (2024-Present)</h3>
+          <h3>Full-stack Developer @WebWorks (2018-2020)</h3>
           <p>
-            Developed an e-commerce platform called ZaishAngadi for a clothing enterprise, providing website creation, data
-provisioning, and analytical insights.
+            At WebWorks, I developed end-to-end solutions in a fast-paced startup environment.
+            I contributed to both front-end and back-end development, integrated APIs, and ensured seamless operation of web applications.
           </p>
         </div>
         <div class="experience-item">
-          <h3>Summer Intern @GrabOnRent (Jul,2018-Oct,2018)</h3>
+          <h3>Junior Developer @StartUpHub (2016-2018)</h3>
           <p>
-            Completed a three-month internship at GrabOnRent, an online rental marketplace startup in Bengaluru, gaining valuable
-industry exposure.
+            At StartUpHub, I supported senior developers with code maintenance, debugging, and feature development.
+            This role provided hands-on experience and a strong foundation in software development practices.
           </p>
         </div>
       </div>
 
+      <!-- Skills Section -->
+      <div class="card">
+        <h2>Skills</h2>
+        <ul class="skills-list">
+          <li><strong>Programming Languages:</strong> Python, R, MySQL</li>
+          <li><strong>Frameworks:</strong> ASP.NET, Flask, Django, Playwright, Selenium, Scrapy</li>
+          <li><strong>Libraries:</strong> BeautifulSoup, Selectolax, Numpy, Sklearn, Scipy, Matplotlib, Pandas, Seaborn, TensorFlow</li>
+          <li><strong>APIs:</strong> REST API</li>
+          <li><strong>Tools:</strong> Git, GitHub, MongoDB</li>
+        </ul>
+      </div>
+
+      <!-- Projects Section -->
+      <div class="card">
+        <h2>Projects</h2>
+        <div class="project-item">
+          <h3>ASP.NET Web-Page Scraper</h3>
+          <p>
+            A Python-based scraper using <code>httpx</code> and <code>selectolax</code> to extract quotes from an ASP.NET (.aspx) website.
+            It handles viewstate challenges and stores the extracted data in JSON format.
+          </p>
+        </div>
+        <div class="project-item">
+          <h3>Periodic Table Web Scraper</h3>
+          <p>
+            Utilizes <code>Scrapy</code> and <code>Scrapy-Playwright</code> to dynamically scrape data on periodic table elements, capturing details such as symbol, name, atomic number, atomic mass, and chemical group.
+          </p>
+        </div>
+        <div class="project-item">
+          <h3>Ajax-Based Web Scraper</h3>
+          <p>
+            Developed using Selenium to extract job postings from the Trafigura Careers site, handling AJAX-based content and exporting the data to a CSV file.
+          </p>
+        </div>
+      </div>
+
+      <!-- Connect With Me Section -->
       <div class="card">
         <h2>Connect With Me</h2>
         <div class="social-links">
@@ -65,9 +105,30 @@ industry exposure.
         </div>
       </div>
     </main>
+    
     <footer class="footer">
+      <p>Visitors: <span id="visitor-counter"></span></p>
       © Copyright 2025 John Doe, All Rights Reserved.
     </footer>
+    
+    <script>
+      // Get the visitor count from local storage
+      let count = localStorage.getItem('visitorCount');
+
+      // If no count exists, initialize it
+      if (count === null) {
+          count = 1;
+      } else {
+          count = parseInt(count) + 1;
+      }
+
+      // Store the updated count
+      localStorage.setItem('visitorCount', count);
+
+      // Display the count
+      document.getElementById('visitor-counter').innerText = count;
+    </script>
   </div>
 </body>
 </html>
+
