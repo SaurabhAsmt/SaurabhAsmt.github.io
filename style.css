@@ -59,7 +59,7 @@ h2 {
   transform: translateY(-5px);
 }
 
-/* New styles for work experience items */
+/* Work Experience Item Styles */
 .experience-item {
   margin-bottom: 20px;
 }
@@ -67,10 +67,36 @@ h2 {
 .experience-item h3 {
   font-size: 1.5rem;
   margin-bottom: 5px;
-  color: var(--primary);
+  color: var(--accent);
 }
 
 .experience-item p {
+  font-size: 1rem;
+  margin: 0;
+}
+
+/* Skills Section Styles */
+.skills-list {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.skills-list li {
+  margin-bottom: 10px;
+}
+
+/* Projects Section Styles */
+.project-item {
+  margin-bottom: 20px;
+}
+
+.project-item h3 {
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+  color: var(--accent);
+}
+
+.project-item p {
   font-size: 1rem;
   margin: 0;
 }
@@ -137,4 +163,3 @@ a:hover {
     font-size: 2.5rem;
   }
 }
-
