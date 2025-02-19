@@ -2,7 +2,7 @@
   --primary: #ffffff;
   --secondary: #cccccc;
   --accent: #FF0076;
-  --dark: #121212; /* Dark color adjusted to ensure visibility */
+  --dark: #121212; 
 }
 
 body {
@@ -10,7 +10,7 @@ body {
   line-height: 1.8;
   margin: 0;
   padding: 0;
-  background-color: var(--dark); /* Ensure the background color is applied correctly */
+  background-color: var(--dark);
   color: #ffffff;
 }
 
@@ -57,6 +57,22 @@ h2 {
 
 .card:hover {
   transform: translateY(-5px);
+}
+
+/* New styles for work experience items */
+.experience-item {
+  margin-bottom: 20px;
+}
+
+.experience-item h3 {
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+  color: var(--accent);
+}
+
+.experience-item p {
+  font-size: 1rem;
+  margin: 0;
 }
 
 ul {
