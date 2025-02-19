@@ -67,7 +67,7 @@ h2 {
 .experience-item h2 {
   font-size: 1.5rem;
   margin-bottom: 5px;
-  color: var(--primary);
+  color: var(--accent);
 }
 
 .experience-item p {
