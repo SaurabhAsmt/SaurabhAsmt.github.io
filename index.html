@@ -14,7 +14,7 @@
       <h1>Asmit Saurabh</h1>
       <p>Web Scraping Developer</p>
       <p>📧 <a href="mailto:saurabhasmit8@gmail.com?subject=Hello%20There">Send Email</a></p>
-      <!-- Add this download link -->
+      <!-- Download CV link -->
       <p>
         <a href="cv.pdf" download class="download-cv">
           <i class="fas fa-download"></i> My CV
@@ -33,11 +33,26 @@
 
       <div class="card">
         <h2>Work Experience</h2>
-        <ul>
-          <li>Senior Developer @TechCorp (2020-Present)</li>
-          <li>Full-stack Developer @WebWorks (2018-2020)</li>
-          <li>Junior Developer @StartUpHub (2016-2018)</li>
-        </ul>
+        <div class="experience-item">
+          <h3>Web Scraping Developer @Freelancing (2021-Present)</h3>
+          <p>
+            Delivered data-driven analysis for the AI-based automotive startup Throttl, aiding in strategic decision-making.
+          </p>
+        </div>
+        <div class="experience-item">
+          <h3>Web Developer @Freelancing (2024-Present)</h3>
+          <p>
+            Developed an e-commerce platform called ZaishAngadi for a clothing enterprise, providing website creation, data
+provisioning, and analytical insights.
+          </p>
+        </div>
+        <div class="experience-item">
+          <h3>Summer Intern @GrabOnRent (Jul,2018-Oct,2018)</h3>
+          <p>
+            Completed a three-month internship at GrabOnRent, an online rental marketplace startup in Bengaluru, gaining valuable
+industry exposure.
+          </p>
+        </div>
       </div>
 
       <div class="card">
@@ -50,29 +65,10 @@
         </div>
       </div>
     </main>
-    
     <footer class="footer">
       <p>Visitors: <span id="visitor-counter"></span></p>
       © Copyright 2025 John Doe, All Rights Reserved.
     </footer>
-    
-    <script>
-      // Get the visitor count from local storage
-      let count = localStorage.getItem('visitorCount');
-
-      // If no count exists, initialize it
-      if (count === null) {
-          count = 1;
-      } else {
-          count = parseInt(count) + 1;
-      }
-
-      // Store the updated count
-      localStorage.setItem('visitorCount', count);
-
-      // Display the count
-      document.getElementById('visitor-counter').innerText = count;
-    </script>
   </div>
 </body>
 </html>
