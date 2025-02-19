@@ -2,7 +2,7 @@
   --primary: #ffffff;
   --secondary: #cccccc;
   --accent: #FF0076;
-  --dark: #121212; 
+  --dark: #121212; /* Dark color adjusted to ensure visibility */
 }
 
 body {
@@ -64,10 +64,10 @@ h2 {
   margin-bottom: 20px;
 }
 
-.experience-item h2 {
+.experience-item h3 {
   font-size: 1.5rem;
   margin-bottom: 5px;
-  color: var(--accent);
+  color: var(--primary);
 }
 
 .experience-item p {
@@ -137,3 +137,4 @@ a:hover {
     font-size: 2.5rem;
   }
 }
+
