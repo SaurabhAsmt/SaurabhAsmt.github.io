@@ -64,8 +64,8 @@ h2 {
   margin-bottom: 20px;
 }
 
-.experience-item h3 {
-  font-size: 1.4rem;
+.experience-item h2 {
+  font-size: 1.5rem;
   margin-bottom: 5px;
   color: var(--accent);
 }
