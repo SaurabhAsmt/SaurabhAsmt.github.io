@@ -82,7 +82,13 @@ h2 {
 }
 
 .skills-list li {
+  position: static;
   margin-bottom: 10px;
+  padding-left: 0;
+}
+
+.skills-list li:before {
+  content: none;            /* Remove the custom arrow icon */
 }
 
 /* Projects Section Styles */
