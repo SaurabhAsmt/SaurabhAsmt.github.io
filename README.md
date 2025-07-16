@@ -1,10 +1,10 @@
 # Asmit Saurabh – Python Developer Portfolio 🚀
 
+![Portfolio Screenshot](screenshot.png)
+
 This is a minimal and sleek **portfolio website** to showcase my work as a Python Developer, Web Scraper, and Data Enthusiast. It includes sections for projects, skills, education, and certifications. The site is fully responsive and optimized for GitHub Pages.
 
 🌐 **Live Website:** [View Portfolio](https://saurabhasmt.github.io/)  
-
-![Portfolio Screenshot](screenshot.png)
 
 ---
 
@@ -27,3 +27,16 @@ This is a minimal and sleek **portfolio website** to showcase my work as a Pytho
 ---
 
 ## 📂 Folder Structure
+/
+├── index.html
+├── style.css
+├── resume.pdf
+├── screenshot.png
+└── README.md
+
+---
+
+## 📜 License
+
+This project is open source and available under the [MIT License](LICENSE).
+
