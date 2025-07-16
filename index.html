@@ -1,125 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Asmit Saurabh</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-  <!-- Link to external CSS file -->
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Asmit Saurabh - Python Developer Portfolio" />
+  <title>Asmit Saurabh | Python Developer</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="container">
-    <header class="header">
-      <h1>Asmit Saurabh</h1>
-      <p>Web Scraping Developer</p>
-      <p>📧 <a href="mailto:saurabhasmit8@gmail.com?subject=Hello%20There">Send Email</a></p>
-      <!-- Download CV link -->
-      <p>
-        <a href="resume.pdf" download class="download-cv">
-          <i class="fas fa-download"></i> My Resume
-        </a>
-      </p>
-    </header>
 
-    <main>
-      <!-- About Me Section -->
-      <div class="card">
-        <h2>About Me</h2>
-        <p>
-          I am a results-driven Web Scraping Developer with a solid background in Python and hands-on experience in tools like Scrapy, Selenium, and BeautifulSoup.
-          I have successfully built and deployed web scraping and Data Analysis solutions across diverse projects.
-        </p>
-      </div>
+  <!-- Header Section -->
+  <header id="home">
+    <h1>Asmit Saurabh</h1>
+    <p>Python Developer | Web Scraper | Data Enthusiast</p>
+    <div class="social">
+      <a href="https://www.linkedin.com/in/asmit-saurabh-108/" target="_blank">LinkedIn</a>
+      <a href="https://mail.google.com/mail/?view=cm&to=saurabhasmit8@gmail.com" target="_blank">Email</a>
+      <a href="https://github.com/yourusername" target="_blank">GitHub</a>
+    </div>
+    <a href="resume.pdf" class="resume-btn" target="_blank">Download Resume</a>
+  </header>
 
-      <!-- Work Experience Section -->
-      <div class="card">
-        <h2>Work Experience</h2>
-        <div class="experience-item">
-          <h3>Web Scraping Developer @Freelancing (2021-Present)</h3>
-          <p>
-            Delivered data-driven analysis for the AI-based automotive startup Throttl, aiding in strategic decision-making.
-          </p>
-        </div>
-        <div class="experience-item">
-          <h3>Web Developer @Freelancing (2024-Present)</h3>
-          <p>
-            Developed an e-commerce platform called ZaishAngadi for a clothing enterprise, providing website creation, data
-provisioning, and analytical insights.
-          </p>
-        </div>
-        <div class="experience-item">
-          <h3>Summer Intern @GrabOnRent (Jul,2018-Oct,2018)</h3>
-          <p>
-            Completed more than three-month internship at GrabOnRent, an online rental marketplace startup in Bengaluru, gaining valuable
-industry exposure
-          </p>
-        </div>
-      </div>
+  <!-- About Me Section -->
+  <section class="content-section" id="about">
+    <h2>About Me</h2>
+    <p>
+      I am a Python developer with 5+ years of experience building web scrapers, automating workflows, and crafting data‑driven applications. Passionate about clean code and solving real‑world problems.
+    </p>
+  </section>
 
-      <!-- Skills Section -->
-      <div class="card">
-        <h2>Skills</h2>
-        <ul class="skills-list">
-          <li><strong>Programming Languages:</strong> Python, R, MySQL</li>
-          <li><strong>Frameworks:</strong> ASP.NET, Flask, Django, Playwright, Selenium, Scrapy</li>
-          <li><strong>Libraries:</strong> BeautifulSoup, Selectolax, Numpy, Sklearn, Scipy, Matplotlib, Pandas, Seaborn, TensorFlow</li>
-          <li><strong>APIs:</strong> REST API</li>
-          <li><strong>Tools:</strong> Git, GitHub, MongoDB</li>
-        </ul>
+  <!-- Projects Section -->
+  <section class="content-section" id="projects">
+    <h2>Projects</h2>
+    <div class="projects">
+      <div class="project">
+        <h3>Periodic Table Web Scraper</h3>
+        <p>Utilized Scrapy and Scrapy-Playwright to dynamically scrape data about periodic table elements.Extracted details including symbol, name, atomic number, atomic mass, and chemical group.</p>
       </div>
+      <div class="project">
+        <h3>Ajax-Based Web Scraper</h3>
+        <p>Developed a Selenium-based scraper to extract job postings from the Trafigura Careers site.Extracted job titles and locations, handling AJAX-based content, and exported the data to a CSV file.</p>
+      </div>
+      <div class="project">
+        <h3>ASP.NET Web-Page Scraper</h3>
+        <p>Built a Python-based scraper using httpx and selectolax to extract quotes, authors, and tags from an ASP.NET
+        (.aspx) website.Managed challenges related to viewstate and saved the extracted data in JSON format.</p>
+      </div>
+    </div>
+    <div class="more-btn-container">
+      <a href="https://github.com/SaurabhAsmt?tab=repositories" class="more-btn" target="_blank">More Projects on GitHub</a>
+    </div>
+  </section>
 
-      <!-- Projects Section -->
-      <div class="card">
-        <h2>Projects</h2>
-        <div class="project-item">
-          <h3>
-            <a href="https://github.com/SaurabhAsmt/Scraping-ASPX-Webpage.git" target="_blank">
-              ASP.NET Web-Page Scraper
-            </a>
-          </h3>
-          <p>
-            A Python-based scraper using <code>httpx</code> and <code>selectolax</code> to extract quotes from an ASP.NET (.aspx) website.
-            It handles viewstate challenges and stores the extracted data in JSON format.
-          </p>
-        </div>
-        <div class="project-item">
-          <h3>
-            <a href="https://github.com/SaurabhAsmt/PeriodicTable-Webscraping.git" target="_blank">
-              Periodic Table Web Scraper
-            </a>
-          </h3>
-          <p>
-            Utilizes <code>Scrapy</code> and <code>Scrapy-Playwright</code> to dynamically scrape data on periodic table elements, capturing details such as symbol, name, atomic number, atomic mass, and chemical group.
-          </p>
-        </div>
-        <div class="project-item">
-          <h3>
-            <a href="https://github.com/SaurabhAsmt/Selenium_Project.git" target="_blank">
-              Ajax-Based Web Scraper
-            </a>
-          </h3>
-          <p>
-            Developed using Selenium to extract job postings from the Trafigura Careers site, handling AJAX-based content and exporting the data to a CSV file.
-          </p>
-        </div>
-      </div>
+  <!-- Skills Section -->
+  <section class="content-section" id="skills">
+    <h2>Skills</h2>
+    <p><strong>Languages:</strong> Python, MySQL, HTML, CSS, R</p>
+    <p><strong>Tools & Frameworks:</strong>Git, PyTorch, Keras, Numpy, Scikit-learn, MongoDB, GCP, FastAPI, Flask, ASP.NET,Playwright, Scrapy, Selenium, Selectolax</p>
+    <p><strong>Languages</strong>English (proficient), Hindi (native)</p>
+  </section>
 
-      <!-- Connect With Me Section -->
-      <div class="card">
-        <h2>Connect With Me</h2>
-        <div class="social-links">
-          <a href="https://www.linkedin.com/in/asmit-saurabh-108/" target="_blank"><i class="fab fa-linkedin"></i></a>
-          <a href="https://github.com/SaurabhAsmt" target="_blank"><i class="fab fa-github"></i></a>
-          <a href="https://medium.com/@saurabhasmit8" target="_blank"><i class="fab fa-medium"></i></a>
-        </div>
-      </div>
-    </main>
-    
-    <footer class="footer">
-      © Copyright 2025 Asmit Saurabh, All Rights Reserved.
-    </footer>
-    
-  </div>
+  <!-- Education Section -->
+  <section class="content-section" id="education">
+    <h2>Education</h2>
+    <p><strong>Bachelor of Technology in Computer Science</strong></p>
+    <p>SAITM,MDU-Rohtak, Aug 2016 – July 2020</p>
+  </section>
+
+  <!-- Certifications Section -->
+  <section class="content-section" id="certifications">
+    <h2>Certifications</h2>
+    <p>
+      <a href="https://www.udemy.com/certificate/UC-8e44f044-0989-401c-84ef-f344ec7a657a/" target="_blank">
+        Web Scraping by Udemy
+      </a>
+    </p>
+    <p>
+      <a href="https://www.udemy.com/certificate/UC-16463606-f9f9-4b1d-8f31-c2fc98a9fc8e/" target="_blank">
+        Data Science course by Udemy 
+      </a>
+    </p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 Asmit Saurabh | All rights reserved
+  </footer>
+
+  <!-- Smooth scroll script -->
+  <script>
+    document.querySelectorAll('a[href^=\"#\"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
 </body>
 </html>
