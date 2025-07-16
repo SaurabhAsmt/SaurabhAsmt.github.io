@@ -26,13 +26,12 @@ This is a minimal and sleek **portfolio website** to showcase my work as a Pytho
 
 ---
 
-## 📂 Folder Structure
-/
-├── index.html
-├── style.css
-├── resume.pdf
-├── screenshot.png
-└── README.md
+📂 /
+├── 📄 index.html
+├── 🎨 style.css
+├── 📄 resume.pdf
+├── 🖼️ screenshot.png
+└── 📝 README.md
 
 ---
 
