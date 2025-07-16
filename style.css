@@ -127,7 +127,7 @@ header p {
 }
 
 .more-btn:hover {
-  background: #e0245e;
+  background: #000000;
   transform: translateY(-3px);
 }
 
