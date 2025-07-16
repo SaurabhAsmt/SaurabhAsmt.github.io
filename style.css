@@ -160,3 +160,20 @@ footer {
   color: #ff385c;
   /* highlight color on hover */
 }
+
+/* Mobile adjustments */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 2rem;
+  }
+  header p {
+    font-size: 1rem;
+  }
+  .content-section h2 {
+    font-size: 1.5rem;
+  }
+  .resume-btn, .more-btn {
+    width: 90%;
+    font-size: 1rem;
+  }
+}
